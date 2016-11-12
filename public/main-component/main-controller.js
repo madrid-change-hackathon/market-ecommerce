@@ -1,6 +1,6 @@
 angular.module('ecommerce')
   .component('mainComponent', {
-    templateUrl: './main-component/main-component-tmpl.html',
+    templateUrl: './main-component/main-tmpl.html',
     controller: MainComponent,
     controllerAs: 'mc',
     bindings: {

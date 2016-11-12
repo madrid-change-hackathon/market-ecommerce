@@ -23,11 +23,12 @@ function RecipeService ($q) {
     ])
   }
 
-  service.getRecipe = function (id) {
+  service.getRecipeByID = function (id) {
     return $q.resolve(
       {
         ID: 1,
         name: 'Cocido',
+        url: 'http://images.media-allrecipes.com/userphotos/250x250/4061386.jpg',
         ingredients: [
           {
 

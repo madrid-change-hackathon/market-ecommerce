@@ -1,6 +1,6 @@
 angular.module('ecommerce')
   .component('menuComponent', {
-    templateUrl: './menu-component/menu-component-tmpl.html',
+    templateUrl: './menu-component/menu-tmpl.html',
     controller: MenuComponent,
     controllerAs: 'menuC',
     bindings: {
