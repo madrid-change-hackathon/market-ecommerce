@@ -1,0 +1,21 @@
+{
+  "name": "market-ecommerce",
+  "version": "1.0.0",
+  "description": "ecommerce for food markets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madrid-change-hackathon/market-ecommerce.git"
+  },
+  "author": "Gabriel Fürstenheim <furstenheim@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madrid-change-hackathon/market-ecommerce/issues"
+  },
+  "homepage": "https://github.com/madrid-change-hackathon/market-ecommerce#readme",
+  "devDependencies": {
+  }
+}
