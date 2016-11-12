@@ -2,8 +2,8 @@ angular.module('ecommerce')
   .service('RecipeService', RecipeService)
 
 function RecipeService ($q) {
-  var vm = this
-  vm.getRecipes = function () {
+  var service = this
+  service.getRecipes = function () {
     return $q.resolve([
       {
         ID: 1,
@@ -23,7 +23,7 @@ function RecipeService ($q) {
     ])
   }
 
-  vm.getRecipe = function (id) {
+  service.getRecipe = function (id) {
     return $q.resolve(
       {
         ID: 1,
