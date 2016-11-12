@@ -4,7 +4,7 @@
   "description": "ecommerce for food markets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/madrid-change-hackathon/market-ecommerce/issues"
   },
-  "homepage": "https://github.com/madrid-change-hackathon/market-ecommerce#readme",
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/madrid-change-hackathon/market-ecommerce#readme"
+
 }

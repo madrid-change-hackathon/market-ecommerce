@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server --hot --inline"
+  },
+  "devDependencies": {
+    "generator-angular-webpack": "^0.5.9",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
