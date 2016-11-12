@@ -16,6 +16,11 @@ module.exports = {
       'vendor-bundle.js'
     )
   ],
+  module: {
+    loaders: [
+      {test: /\.scss$/, loaders: ['style', 'css', 'sass']}
+    ]
+  },
   devServer: {
     contentBase: './',
     port: 8080,
