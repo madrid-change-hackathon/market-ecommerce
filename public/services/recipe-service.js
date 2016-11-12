@@ -6,32 +6,44 @@ function RecipeService ($q) {
   service.getRecipes = function () {
     return $q.resolve([
       {
-        ID: 1,
+        Id: 1,
         url: '',
         name: 'Cocido'
       },
       {
-        ID: 2,
+        Id: 2,
         url: '',
         name: 'Callos'
       },
       {
-        ID: 3,
+        Id: 3,
         url: '',
         name: ''
       }
     ])
   }
 
-  service.getRecipeByID = function (id) {
+  service.getRecipeById = function (id) {
     return $q.resolve(
       {
-        ID: 1,
+        Id: 1,
         name: 'Cocido',
         url: 'http://images.media-allrecipes.com/userphotos/250x250/4061386.jpg',
-        ingredients: [
+        products: [
           {
-
+            Id: 1,
+            typeId: 0,
+            name: 'Estofado'
+          },
+          {
+            Id: 2,
+            typeId: 0,
+            name: 'Tocino'
+          },
+          {
+            Id: 3,
+            typeId: 1,
+            name: 'Garbanzos'
           }
         ]
       })

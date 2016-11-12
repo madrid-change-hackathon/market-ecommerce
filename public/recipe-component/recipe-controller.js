@@ -1,3 +1,4 @@
+var _ = require('lodash')
 angular
   .module('ecommerce')
   .component('recipeComponent', {
@@ -5,15 +6,22 @@ angular
     controller: RecipeController,
     controllerAs: 'rc',
     bindings: {
-      recipeID: '='
+      recipeId: '='
     }
   })
-function RecipeController (RecipeService) {
+function RecipeController (RecipeService, MarketService) {
   var vm = this
   vm.recipe = {
   }
-  RecipeService.getRecipeByID(vm.recipeID)
+  RecipeService.getRecipeById(vm.recipeId)
     .then(function (recipe) {
       Object.assign(vm.recipe, recipe)
+      var productsByTypeId = _.groupBy(recipe.products, 'typeId')
+      var types = Object.keys(productsByTypeId)
+      return $q.all(_.map(productsById, (products, typeId) => MarketService.getStoresByProducts(typeId, products)))
+        .then()
+    })
+    .then(function () {
+
     })
 }
