@@ -39,6 +39,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	font-family:36px 'Open Sans', sans-serif;
 }
+
 .fitImage {
 	max-width: 100%;
 	vertical-align: right;
@@ -120,7 +121,7 @@ overflow: hidden;
 }
 .btn {
 	color:#fff;
-	background: #F39D17;
+	//background: #F39D17;
 }
 .btn:hover {
 	 color:#fff !important;
@@ -1053,7 +1054,7 @@ footer {
 .social a {
 	font-size: 32px;
 	margin: 0 10px;
-	color: #F39D17;
+	//color: #F39D17;
 }
 .contact ul li {
 	margin-bottom: 10px;
@@ -1120,6 +1121,7 @@ color:#a30046;
 }
 footer input.form-control{
 	padding: 18px 10px;
+
 } 
 .area1 a{
 	margin-bottom:10px;
