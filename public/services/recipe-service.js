@@ -7,18 +7,21 @@ function RecipeService ($q) {
     return $q.resolve([
       {
         Id: 1,
-        url: '',
-        name: 'Cocido'
+        url: 'images/3.jpg',
+        name: 'Cocido',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus'
       },
       {
         Id: 2,
-        url: '',
+        url: 'images/6.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus',
         name: 'Callos'
       },
       {
         Id: 3,
-        url: '',
-        name: ''
+        url: 'images/5.jpg',
+        name: 'Estofado',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus'
       }
     ])
   }

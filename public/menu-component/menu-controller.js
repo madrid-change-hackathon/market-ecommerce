@@ -9,7 +9,12 @@ angular.module('ecommerce')
   })*/
   .controller('MenuController', MenuComponent)
 
-function MenuComponent () {
+function MenuComponent (RecipeService) {
   var vm = this
   vm.text = vm.name + vm.name
+  vm.recipes = []
+  RecipeService.getRecipes().then(function (recipes) {
+      vm.recipes = recipes
+    }
+  )
 }

@@ -92,49 +92,11 @@
 <section id="services" class="page-section colord">
     <div class="container">
         <div class="row">
-            <!-- item -->
-            <!--<div class="col-md-3 text-center receta"> <i class="circle"><img src="images/1.png" alt="" /></i>
-              <h3>Receta 1</h3>
-              <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet congue.</p>
-            </div>-->
-            <!-- end: -->
+            <div class="col-md-4" ng-repeat="recipe in menuC.recipes">
+                <img class="img-responsive" ng-src="{{recipe.url}}" alt="" />
+                <h2>{{recipe.name}}</h2>
+                <p>{{recipe.description}}</p>
 
-            <!-- item -->
-            <!--<div class="col-md-3 text-center receta"><i class="circle"> <img src="images/2.png" alt="" /></i>
-              <h3>Receta 2</h3>
-              <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet congue.</p>
-            </div>-->
-            <!-- end: -->
-
-            <!-- item -->
-            <!--<div class="col-md-3 text-center receta"><i class="circle"> <img src="images/3.png" alt="" /></i>
-              <h3>Receta 3</h3>
-              <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit impe.</p>
-            </div>-->
-            <!-- end: -->
-
-            <!-- item -->
-            <!--<div class="col-md-3 text-center receta"><i class="circle"> <img src="images/4.png" alt="" /></i>
-              <h3>Receta 4</h3>
-              <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer elit imperdiet conempus.</p>
-            </div>-->
-            <!-- end:-->
-        </div>
-        <div class="row">
-            <div class="col-md-4 md-margin-bottom-40">
-                <img class="img-responsive" src="images/3.jpg" alt="">
-                <h2>Fruits Punch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive" src="images/5.jpg" alt="">
-                <h2>Vegi Mallon</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <img class="img-responsive" src="images/6.jpg" alt="">
-                <h2>Burger Patty</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
             </div>
         </div>
         <!--/.container-->
