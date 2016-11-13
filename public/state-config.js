@@ -17,6 +17,13 @@ function stateConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('cart', {
+      name: 'cart',
+      url: '/cart',
+      controllerAs: 'cC',
+      controller: 'CartController',
+      templateUrl: 'cart-component/cart-tmpl.html'
+    })
     .state('menu', {
       name: 'menu',
       url: '/menu/:marketId',
