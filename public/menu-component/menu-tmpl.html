@@ -41,9 +41,10 @@
                                                   <label for="sel1" style="color:white">Tiempo</label>
                                                   <select class="form-control" id="sel1">
                                                     <option selected>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
+                                                    <option>10 a 15 minutos</option>
+                                                    <option>15 a 30 munitos</option>
+                                                    <option>30 minutos a 1 hora</option>
+                                                    <option>mas de 1 hora</option>
                                                   </select>
                                             </div>
                                             </div>
@@ -51,10 +52,10 @@
                                                 <div class="form-group">
                                                       <label for="sel1" style="color:white">Precio</label>
                                                       <select class="form-control" id="sel1">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
+                                                        <option>menor a 5 euros</option>
+                                                        <option>de 6 a 15 euros</option>
+                                                        <option>de 16 a 20 euros</option>
+                                                        <option>mas de 2 euros</option>
                                                       </select>
                                                 </div>  
                                             </div>
@@ -63,10 +64,10 @@
                                                 <div class="form-group">
                                                       <label for="sel1" style="color:white">Tipo</label>
                                                       <select class="form-control" id="sel1">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
+                                                        <option>Vegetariana</option>
+                                                        <option>Carnes</option>
+                                                        <option>Pescados</option>
+                                                        <option>Sopas</option>
                                                       </select>
                                                 </div>  
                                             </div>
@@ -75,10 +76,10 @@
                                                 <div class="form-group" style="color:white">
                                                       <label for="sel1">Nacionalidad</label>
                                                       <select class="form-control" id="sel1">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
+                                                        <option>Japonesa</option>
+                                                        <option>Española</option>
+                                                        <option>Tailandesa</option>
+                                                        <option>India</option>
                                                       </select>
                                                 </div>  
                                             </div>
@@ -190,7 +191,7 @@
     <div class="container">
         <div class="row">
             <div ui-sref="recipe({recipeId: {{recipe.Id}} })" class="col-md-4" ng-repeat="recipe in menuC.recipes">
-                <img class="img-responsive" ng-src="{{recipe.url}}" alt="" />
+                <img class="img-responsive img-responsive1" ng-src="{{recipe.url}}" alt=""  />
                 <h2>{{recipe.name}}</h2>
                 <p>{{recipe.description}}</p>
 
@@ -199,14 +200,14 @@
         <!--/.container-->
 </section>
 
-<div class="carousel-reviews broun-block">
+<!--<div class="carousel-reviews broun-block">
     <div class="container">
         <div class="row">
             <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
 
                 <div class="carousel-inner">
                     <div class="item active">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-6 person">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">Verduras Doña Lupita</a>
                                 <div class="mark">rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
@@ -219,7 +220,7 @@
                                 <span>Mercado Maravillas local 5-B</span>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
+                        <div class="col-md-4 col-sm-6 hidden-xs person">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">The Purge: Anarchy</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
@@ -232,7 +233,7 @@
                                 <i>United States</i>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs person">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">Planes: Fire & Rescue</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
@@ -247,7 +248,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-6 person" >
                             <div class="block-text rel zmin">
                                 <a title="" href="#">Hercules</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
@@ -260,7 +261,7 @@
                                 <i>from Glasgow, Scotland</i>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
+                        <div class="col-md-4 col-sm-6 hidden-xs person">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">The Purge: Anarchy</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
@@ -273,7 +274,7 @@
                                 <i>United States</i>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs person">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">Planes: Fire & Rescue</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
@@ -297,7 +298,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!--<section id="map">
 
     <p class="map-error">Something went wrong... Unable to load map.</p>
