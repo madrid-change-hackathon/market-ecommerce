@@ -1,6 +1,7 @@
 var _ = require('lodash')
 angular
   .module('ecommerce')
+  // ui router is not getting component :(
   /*.component('recipeComponent', {
     templateUrl: './recipe-component/recipe-tmpl.html',
     controller: RecipeController,

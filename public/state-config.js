@@ -1,7 +1,8 @@
 angular.module('ecommerce')
   .config(stateConfig)
 
-function stateConfig ($stateProvider) {
+function stateConfig ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/menu/1')
   $stateProvider
     .state('recipe', {
       name: 'recipe',
@@ -13,6 +14,18 @@ function stateConfig ($stateProvider) {
         recipeId: function ($stateParams) {
           console.log($stateParams)
           return parseInt($stateParams.recipeId)
+        }
+      }
+    })
+    .state('menu', {
+      name: 'menu',
+      url: '/menu/:marketId',
+      controller: 'MenuController',
+      controllerAs: 'menuC',
+      templateUrl: 'menu-component/menu-tmpl.html',
+      resolve: {
+        marketId: function ($stateParams) {
+          return parseInt($stateParams.marketId)
         }
       }
     })
