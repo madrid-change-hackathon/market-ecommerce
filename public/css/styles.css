@@ -141,10 +141,11 @@ padding: 8px 12px;
 	width: 75%;
 }
 .form-control {
-	border: none;
+	//border: none;
+	
 	padding: 22px 4px;
 	outline: none;
-	color: #5A5A5A;
+	color: #008d36;
 	margin: 0;
 	width: 210px;
 	max-width: 100%;
@@ -155,6 +156,7 @@ padding: 8px 12px;
 	border-radius: 0px !important;
 	width: 99%;
 }
+
 .button-outline {
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;

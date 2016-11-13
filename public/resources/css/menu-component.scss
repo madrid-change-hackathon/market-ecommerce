@@ -6,5 +6,97 @@
 }
 
 .big-text {
-	font-size: 20px
+	font-size: 20px;
+}
+.search-icon-color {
+	 color: white;
+}
+.modal-dialog{
+	position: absolute;
+	left: 50%;
+	//now you must set a margin left under zero - value is a half width your window
+	margin-left: -312px;
+	// this same situation is with height - example
+	height: 500px;
+	top: 60%;
+	margin-top: -250px;
+} 
+.modal-content
+{
+	background-color:rgba(0, 141, 54, 0.2);
+	border:1px solid green;
+}
+.form-control
+{
+	border-radius: 7px;
+}
+.search-query
+{
+	border:2px solid green;
+	border-radius: 7px;
+}
+.customSelect
+{
+	width:150px;
+}
+.row1
+{
+	//border:2px solid grey;margin-top: 15%;background-color:rgba(0, 0, 0, 0.5);
+	margin-top:15%;
+	border:2px solid gray;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:2%;
+}
+.row2
+{
+	border:2px solid grey;
+	background-color: rgba(0, 0, 0, 0.0);
+	padding:0.5%;
+	margin: 1%;
+}
+
+.row3
+{
+	border:2px solid grey;
+	margin: 1%;
+	background-color:rgba(0, 0, 0, 0.5)
+}
+.combos
+{
+	//border:2px solid red;
+	padding:0px;
+	margin-left:7.5%;
+	width:40%;
+}
+.combos1
+{
+	//border:2px solid red;
+	padding:0px;
+	margin-left:3%;
+	width:40%;
+}
+#sel1
+{
+	border:2px solid #008d36;
+	border-radius:7px;
+}
+.filtros
+{
+	border:2px solid #008d36;
+	border-radius:7px;
+	padding:5%;
+	width:46%;
+	margin-top:5%;
+	 background-color: Transparent;
+	 color:white;
+	 font-size:100%;
+}
+.buscar
+{
+	border:2px solid #008d36;
+	border-radius:7px;
+	padding:5%;
+	width:46%;
+	margin-top:5%;
+	margin-left:30%;
 }

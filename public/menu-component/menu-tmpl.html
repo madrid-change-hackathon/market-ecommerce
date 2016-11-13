@@ -2,13 +2,13 @@
     <div class="container cont">
         <nav class="navbar navbar-inverse navegar" role="navigation">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="#"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-camera fa-3x"></i></a></li>
             </ul>
             <div class="navbar-header logo">
                 <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><img src="images/logo_web.png" alt="" /></a>
             </div>
             <ul class="nav navbar-nav navbar-right cart">
-                <li><a href="#"><i class="fa fa-opencart fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart fa-3x"></i></a></li>
             </ul>
             <!--/.navbar-header-->
             <!-- <div id="main-nav" class="collapse navbar-collapse">
@@ -23,7 +23,7 @@
                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
                </ul>
 
-             </div>-->
+             </div>
             <!--/.navbar-collapse-->
 
         </nav>
@@ -34,31 +34,160 @@
 <!--/.header-->
 <div id="#top"></div>
 <section id="home">
-    <div class="container" style="width: 1170px;">
+    <div class="container" style="width: 1000px;">
 
-  <div class="row" style="border:2px solid grey;margin-top: 15%;background-color:rgba(0, 0, 0, 0.5);">
-    <div style="height: 304px">
-        <div class="row" style="border:2px solid grey;margin: 2%;background-color: rgba(0, 0, 0, 0.0);z-index: 10">
-          <div style="height: 272px">
+  <div class="row row1" >
+    <div style="">
+        <div class=" row row2" >
+          <div style="">
             <!--   -->
-            <div class="row" style="border:2px solid grey;margin: 1%;background-color:rgba(0, 0, 0, 0.5)">
+            <div class="row row3" >
               <div style="height: 235px">
                   <center>
                     <h2><span class="titulo" style="color:white;font-size: 200%;">¿ Que quieres cocinar hoy ?</span></h2>
                       <div class="row" style="width: 80%">
                           <div class="input-group col-md-12" style="margin-top: 3%">
-                                <input style="height: 50px" type="text" class="  search-query form-control" placeholder="Search" />
+                                <input style="height: 50px" type="text" class="search-query form-control" placeholder="Search" />
                                 <span class="input-group-btn">
                                     <button style="background-color: transparent;border: none;padding-left: 7px" type="button"  >
-                                        <span style=" color:white;" class=" glyphicon glyphicon-search"></span>
+                                        <span class="search-icon-color glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
                             </div>
                         <div>
                   </center>
-                        <div class="col-md-3 col-md-offset-9">
-                             <a href="#" style="color:white"> Ver mas filtros </a>
-                        </div>     
+                        <div class="col-md-3 " style="margin-left:10%">
+                             <!--<a href="#" style="color:white" data-toggle="collapse" data-target="#demo"> Ver mas filtros </a>-->
+                             <button class="filtros" data-toggle="collapse" data-target="#demo"><i class="fa fa-plus fa-lg"></i>Filtros</button>
+
+                        </div> 
+                        <div class="col-md-3" style="margin-left: 32%">
+                             <a href="#/menu/1#services" class="scroll-link"><button class="buscar" >Buscar</button></a>
+                        </div>
+
+<div id="demo" class="collapse">
+
+                                          <div class="row">
+                                            <div class="col-md-6 combos">
+                                             <div class="form-group">
+                                                  <label for="sel1" style="color:white">Tiempo</label>
+                                                  <select class="form-control" id="sel1">
+                                                    <option selected>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                  </select>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-6 combos1" >
+                                                <div class="form-group">
+                                                      <label for="sel1" style="color:white">Precio</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                            <div class="col-md-6 combos">
+                                                <div class="form-group">
+                                                      <label for="sel1" style="color:white">Tipo</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                            <div class="col-md-6 combos1">
+                                                <div class="form-group" style="color:white">
+                                                      <label for="sel1">Nacionalidad</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                          </div>
+
+
+
+</div>
+
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+                                    
+                                      <!-- Modal content-->
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" style="color:grey">&times;</button>                                          
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                             <div class="form-group">
+                                                  <label for="sel1">Tiempo</label>
+                                                  <select class="form-control" id="sel1">
+                                                    <option selected>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                  </select>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                      <label for="sel1">Precio</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                      <label for="sel1">Tipo</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                      <label for="sel1">Nacionalidad</label>
+                                                      <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>  
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>    
 
               </div>
             </div>  
