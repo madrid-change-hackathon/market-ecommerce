@@ -92,7 +92,7 @@
 <section id="services" class="page-section colord">
     <div class="container">
         <div class="row">
-            <div class="col-md-4" ng-repeat="recipe in menuC.recipes">
+            <div ui-sref="recipe({recipeId: {{recipe.Id}} })" class="col-md-4" ng-repeat="recipe in menuC.recipes">
                 <img class="img-responsive" ng-src="{{recipe.url}}" alt="" />
                 <h2>{{recipe.name}}</h2>
                 <p>{{recipe.description}}</p>
