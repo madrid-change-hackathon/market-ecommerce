@@ -11,7 +11,6 @@ function MarketService ($q) {
   }
   service.getStoresByProducts = function (typeId, productIds) {
     var stores = [
-      [
         [
           {
             Id: 1,
@@ -32,7 +31,8 @@ function MarketService ($q) {
           }
         ]
       ]
-    ]
-    return $q.resolve(stores[typeId])
+
+    console.log('stores', stores, typeId)
+    return $q.resolve({typeId, prices: stores[parseInt(typeId)]})
   }
 }

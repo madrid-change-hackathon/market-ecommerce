@@ -6,4 +6,7 @@
     <p>{{rc.recipe.description}}</p>
     <br>
     <br>
+    <div>
+        <p ng-repeat="typePrice in rc.pricesByCategory"> {{typePrice.typeId}} {{typePrice.prices[0].name}} {{typePrice.prices[0].price}} €</p>
+    </div>
 </div>

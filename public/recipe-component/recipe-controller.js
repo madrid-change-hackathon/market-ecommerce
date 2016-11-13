@@ -15,6 +15,7 @@ function RecipeController (RecipeService, MarketService, $q, recipeId) {
   var vm = this
   vm.recipe = {
   }
+  vm.prices = []
   console.log('recipe', recipeId)
   RecipeService.getRecipeById(recipeId)
     .then(function (recipe) {
@@ -22,9 +23,9 @@ function RecipeController (RecipeService, MarketService, $q, recipeId) {
       var productsByTypeId = _.groupBy(recipe.products, 'typeId')
       var types = Object.keys(productsByTypeId)
       return $q.all(_.map(productsByTypeId, (products, typeId) => MarketService.getStoresByProducts(typeId, products)))
-        .then()
     })
-    .then(function () {
-
+    .then(function (prices) {
+      vm.pricesByCategory = prices
+      console.log(vm.pricesByCategory)
     })
 }
